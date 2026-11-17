@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Juan David Quintero - Coder en Riwi, explorando el desarrollo web con pasión por la maquetación limpia y la lógica.">
+  <title>Juan David Quintero • Coder &amp; Web Explorer</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Estilos propios y vibrantes -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Encabezado / Barra con efecto vidrio -->
+  <header class="sticky-top glass-nav border-bottom border-secondary-subtle">
+    <nav class="container navbar navbar-expand-md py-3" aria-label="Navegación principal">
+      <a class="navbar-brand brand-badge text-light" href="#inicio">
+        <span class="text-success">&lt;</span>JuanDavid<span class="text-success">/&gt;</span>
+      </a>
+
+      <button class="navbar-toggler border-0 text-light" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+        <ul class="navbar-nav gap-2 gap-md-3 align-items-md-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#habilidades">Stack</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre-mi">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeria">Comunidad</a>
+          </li>
+          <li class="nav-item ms-md-2">
+            <a class="btn btn-vibrant-primary btn-sm px-3 py-1" href="#contacto">
+              <i class="bi bi-chat-dots me-1" aria-hidden="true"></i> Conectar
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="flex-grow-1 hero-glow">
+
+    <!-- Sección Hero / Presentación personal con vibra fresca -->
+    <section id="inicio" class="py-5 py-lg-6 border-bottom border-secondary-subtle">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          
+          <div class="col-lg-7">
+            <!-- Indicador activo con animación de pulso -->
+            <div class="mb-3">
+              <span class="status-pill">
+                <span class="pulse-dot"></span>
+                <span>En modo aprendizaje activo en <strong>Riwi Medellín</strong></span>
+              </span>
+            </div>
+
+            <h1 class="display-4 fw-bold mb-3 tracking-tight">
+              Construyendo la web con <span class="gradient-text">curiosidad, lógica</span> y buen código.
+            </h1>
+            
+            <p class="lead text-secondary mb-4 col-lg-11">
+              ¡Hola! Soy <strong>Juan David Quintero</strong>. Me apasiona transformar ideas en interfaces limpias, semánticas y accesibles. Mi camino comenzó entendiendo algoritmos en papel y pseudocódigo, y hoy creo experiencias interactivas con <strong>HTML, CSS, Bootstrap, Tailwind y JavaScript</strong>.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 mb-4">
+              <a href="#proyectos" class="btn btn-vibrant-primary px-4 py-2">
+                <i class="bi bi-rocket-takeoff me-2" aria-hidden="true"></i> Explorar Proyectos
+              </a>
+              <a href="https://github.com/yea688513-blip" target="_blank" rel="noopener noreferrer" class="btn btn-vibrant-outline px-4 py-2">
+                <i class="bi bi-github me-2" aria-hidden="true"></i> GitHub
+              </a>
+            </div>
+
+            <!-- Mini badges con métricas o focos rápidos -->
+            <div class="row g-2 pt-2">
+              <div class="col-auto">
+                <div class="stat-pill d-flex align-items-center gap-2">
+                  <i class="bi bi-code-slash text-success fs-5"></i>
+                  <div>
+                    <div class="fw-semibold small text-light">Código Limpio</div>
+                    <div class="text-secondary" style="font-size: 0.75rem;">Semántica sin divitis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="stat-pill d-flex align-items-center gap-2">
+                  <i class="bi bi-lightning-charge text-warning fs-5"></i>
+                  <div>
+                    <div class="fw-semibold small text-light">Mente Ágil</div>
+                    <div class="text-secondary" style="font-size: 0.75rem;">Algoritmia &amp; PSeInt</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="stat-pill d-flex align-items-center gap-2">
+                  <i class="bi bi-people text-info fs-5"></i>
+                  <div>
+                    <div class="fw-semibold small text-light">Comunidad</div>
+                    <div class="text-secondary" style="font-size: 0.75rem;">Ecosistema Riwi</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Foto destacada con marco de resplandor -->
+          <div class="col-lg-5 text-center">
+            <figure class="figure m-0 photo-frame">
+              <img src="assets/img/perfil-riwi.jpg" alt="Foto de Juan David Quintero en Riwi Medellín" class="img-fluid rounded-4 hero-img shadow-lg">
+              <figcaption class="figure-caption text-secondary mt-3 small">
+                <i class="bi bi-geo-alt-fill text-success me-1"></i> Juan David • Ragnarok Medellín / Riwi
+              </figcaption>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Proyectos con diseño cuidado -->
+    <section id="proyectos" class="py-5 border-bottom border-secondary-subtle">
+      <div class="container py-3">
+        <header class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 gap-2">
+          <div>
+            <span class="text-success fw-semibold small text-uppercase tracking-wider">Lo que he construido</span>
+            <h2 class="h2 fw-bold m-0">Proyectos y desafíos</h2>
+          </div>
+          <p class="text-secondary m-0 small">Proyectos reales realizados con pasión y buenas prácticas.</p>
+        </header>
+
+        <div class="row g-4">
+          
+          <!-- Proyecto 1: Rueda Libre -->
+          <article class="col-md-6 col-lg-4">
+            <div class="card h-100 custom-card">
+              <div class="card-body d-flex flex-column p-4">
+                <header class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1 rounded-pill small">
+                    <i class="bi bi-bicycle me-1"></i> Web App
+                  </span>
+                  <span class="badge text-bg-dark border border-secondary-subtle text-secondary small">2026</span>
+                </header>
+
+                <h3 class="h4 card-title fw-bold text-light mb-2">Rueda Libre</h3>
+                <p class="card-text text-secondary small flex-grow-1 mb-3">
+                  Plataforma web para alquiler de bicicletas urbanas. Enfocada en navegación amigable, visualización clara de planes y reservas con marcado semántico y validaciones.
+                </p>
+
+                <!-- Tags tecnológicos -->
+                <ul class="list-inline mb-4 small" aria-label="Tecnologías usadas">
+                  <li class="list-inline-item badge bg-dark-subtle text-light-emphasis border border-secondary-subtle">HTML5</li>
+                  <li class="list-inline-item badge bg-dark-subtle text-light-emphasis border border-secondary-subtle">CSS3 / Bootstrap</li>
+                  <li class="list-inline-item badge bg-dark-subtle text-light-emphasis border border-secondary-subtle">JavaScript</li>
+                </ul>
+
+                <footer class="pt-2 border-top border-secondary-subtle mt-auto">
+                  <a href="https://github.com/yea688513-blip" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-vibrant-outline w-100 py-2" aria-label="Ver código de Rueda Libre en GitHub">
+                    <i class="bi bi-github me-1" aria-hidden="true"></i> Ver Repositorio en GitHub
+                  </a>
+                </footer>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 2: Lógica & Algoritmia -->
+          <article class="col-md-6 col-lg-4">
+            <div class="card h-100 custom-card">
+              <div class="card-body d-flex flex-column p-4">
+                <header class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="badge bg-info-subtle text-info border border-info-subtle px-2 py-1 rounded-pill small">
+                    <i class="bi bi-cpu me-1"></i> Algoritmos
+                  </span>
+                  <span class="badge text-bg-dark border border-secondary-subtle text-secondary small">Fundamentos</span>
+                </header>
+
+                <h3 class="h4 card-title fw-bold text-light mb-2">Lógica &amp; Algoritmia</h3>
+                <p class="card-text text-secondary small flex-grow-1 mb-3">
+                  Colección de ejercicios de estructuración mental: condicionales, ciclos y diagramas de flujo resueltos en PSeInt y traducidos a JavaScript moderno.
+                </p>
+
+                <ul class="list-inline mb-4 small" aria-label="Tecnologías usadas">
+                  <li class="list-inline-item badge bg-dark-subtle text-light-emphasis border border-secondary-subtle">PSeInt</li>
+                  <li class="list-inline-item badge bg-dark-subtle text-light-emphasis border border-secondary-subtle">JS Vanilla</li>
+                  <li class="list-inline-item badge bg-dark-subtle text-light-emphasis border border-secondary-subtle">Git</li>
+                </ul>
+
+                <footer class="pt-2 border-top border-secondary-subtle mt-auto">
+                  <a href="https://github.com/yea688513-blip" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-vibrant-outline w-100 py-2" aria-label="Ver ejercicios de algoritmia en GitHub">
+                    <i class="bi bi-github me-1" aria-hidden="true"></i> Explorar Soluciones
+                  </a>
+                </footer>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 3: Proyecto en construcción Riwi -->
+          <article class="col-md-6 col-lg-4">
+            <div class="card h-100 custom-card border-dashed-card">
+              <div class="card-body d-flex flex-column justify-content-center text-center p-4">
+                <div class="skill-icon mx-auto bg-primary-subtle text-primary mb-3">
+                  <i class="bi bi-hammer fs-4"></i>
+                </div>
+                <h3 class="h5 card-title fw-bold text-light">Próximo Desafío Riwi</h3>
+                <p class="card-text text-secondary small mb-3">
+                  Actualmente cocinando mi siguiente proyecto integrador en el bootcamp. Muy pronto aquí disponible en vivo.
+                </p>
+                <span class="badge bg-secondary-subtle text-light-emphasis align-self-center py-2 px-3 rounded-pill small">
+                  <i class="bi bi-hourglass-split me-1"></i> En desarrollo
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Habilidades / Stack con iconos interactivos -->
+    <section id="habilidades" class="py-5 border-bottom border-secondary-subtle">
+      <div class="container py-3">
+        <header class="mb-4">
+          <span class="text-info fw-semibold small text-uppercase tracking-wider">Caja de herramientas</span>
+          <h2 class="h2 fw-bold">Lo que sé y lo que uso</h2>
+          <p class="text-secondary small">Herramientas con las que construyo soluciones día a día.</p>
+        </header>
+
+        <div class="row g-3">
+          
+          <div class="col-sm-6 col-lg-3">
+            <div class="skill-card">
+              <div class="skill-icon bg-danger-subtle text-danger">
+                <i class="bi bi-filetype-html"></i>
+              </div>
+              <h3 class="h6 fw-bold text-light mb-1">HTML5 &amp; CSS3</h3>
+              <p class="small text-secondary m-0">Estructura semántica pensada para accesibilidad y SEO, sin abusar de etiquetas innecesarias.</p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="skill-card">
+              <div class="skill-icon bg-primary-subtle text-primary">
+                <i class="bi bi-bootstrap-fill"></i>
+              </div>
+              <h3 class="h6 fw-bold text-light mb-1">Bootstrap &amp; Tailwind</h3>
+              <p class="small text-secondary m-0">Desarrollo rápido de interfaces adaptativas con sistemas de grid flexibles y utilidades modernas.</p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="skill-card">
+              <div class="skill-icon bg-warning-subtle text-warning">
+                <i class="bi bi-filetype-js"></i>
+              </div>
+              <h3 class="h6 fw-bold text-light mb-1">JavaScript</h3>
+              <p class="small text-secondary m-0">Fundamentos firmes: variables, manipulación del DOM, eventos e interactividad directa con el usuario.</p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="skill-card">
+              <div class="skill-icon bg-success-subtle text-success">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <h3 class="h6 fw-bold text-light mb-1">PSeInt &amp; Algoritmos</h3>
+              <p class="small text-secondary m-0">Resolución metódica: primero entender y diseñar la lógica, luego codificar con claridad.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Sobre Mí con foto de concentración -->
+    <section id="sobre-mi" class="py-5 border-bottom border-secondary-subtle">
+      <div class="container py-3">
+        <div class="row align-items-center g-5">
+          
+          <div class="col-lg-7">
+            <span class="text-success fw-semibold small text-uppercase tracking-wider">Un poco de mi camino</span>
+            <h2 class="h2 fw-bold mb-3">Estudiante en Riwi, curioso de tiempo completo</h2>
+            
+            <p class="text-secondary">
+              ¡Hola de nuevo! Formar parte de <strong>Riwi</strong> en Medellín ha sido una experiencia que me cambió el ritmo: me enseñó a no tenerle miedo a los retos técnicos y a disfrutar el proceso de romper un problema grande en piezas pequeñas que se puedan resolver paso a paso.
+            </p>
+            <p class="text-secondary">
+              No busco atajos mágicos ni saturar las páginas con librerías pesadas si puedo resolverlo con <strong>HTML semántico bien ordenado y CSS conciso</strong>. Me encanta la sensación de ver una idea cobrar vida en el navegador cuando las cosas hacen clic.
+            </p>
+
+            <div class="p-3 rounded-4 custom-card mt-3">
+              <h3 class="h6 fw-bold text-light mb-2"><i class="bi bi-bullseye text-success me-2"></i>Lo que busco aportar:</h3>
+              <div class="row g-2 text-secondary small">
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                    <span>Ganas constantes de aprender y mejorar.</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                    <span>Código estructurado y fácil de leer.</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                    <span>Buena vibra y trabajo en equipo.</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                    <span>Pasión por la resolución lógica de retos.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 text-center">
+            <figure class="figure m-0 photo-frame">
+              <img src="assets/img/coding-laptop.jpg" alt="Juan David en plena sesión de código en Riwi" class="img-fluid rounded-4 about-img shadow-lg">
+              <figcaption class="figure-caption text-secondary mt-3 small">
+                <i class="bi bi-headphones me-1"></i> Modo concentración: resolviendo retos en Riwi
+              </figcaption>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería con fotos y notas alegres -->
+    <section id="galeria" class="py-5 border-bottom border-secondary-subtle">
+      <div class="container py-3">
+        <header class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 gap-2">
+          <div>
+            <span class="text-warning fw-semibold small text-uppercase tracking-wider">Ambiente &amp; Experiencia</span>
+            <h2 class="h2 fw-bold m-0">Momentos y comunidad</h2>
+          </div>
+          <p class="text-secondary m-0 small">Porque programar también es compartir y disfrutar el camino.</p>
+        </header>
+
+        <div class="row g-3">
+          <div class="col-6 col-md-4">
+            <div class="gallery-card">
+              <img src="assets/img/evento-ragnarok.jpg" alt="Evento Ragnarok en Riwi" class="gallery-thumb" loading="lazy">
+              <div class="gallery-overlay">
+                <strong>Ragnarok Riwi</strong> • Evento gamer y tech en Medellín
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="gallery-card">
+              <img src="assets/img/casual-1.jpg" alt="Actitud positiva en Riwi" class="gallery-thumb" loading="lazy">
+              <div class="gallery-overlay">
+                <strong>Actitud</strong> • Espacios creativos y dinámicos
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="gallery-card">
+              <img src="assets/img/casual-2.jpg" alt="Descanso entre sprints" class="gallery-thumb" loading="lazy">
+              <div class="gallery-overlay">
+                <strong>Break time</strong> • Despejando la mente para volver al código
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="gallery-card">
+              <img src="assets/img/casual-3.jpg" alt="Charlas y convivencia" class="gallery-thumb" loading="lazy">
+              <div class="gallery-overlay">
+                <strong>En equipo</strong> • El valor de los compañeros
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="gallery-card">
+              <img src="assets/img/casual-4.jpg" alt="Juan David hidratándose en los lockers" class="gallery-thumb" loading="lazy">
+              <div class="gallery-overlay">
+                <strong>Hidratación y café</strong> • Imprescindibles para codear
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="gallery-card">
+              <img src="assets/img/perfil-riwi.jpg" alt="Riwi Medellín" class="gallery-thumb" loading="lazy">
+              <div class="gallery-overlay">
+                <strong>Orgullo Coder</strong> • Representando el proceso formativo
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto / Llamado a la acción alegre -->
+    <section id="contacto" class="py-5">
+      <div class="container text-center py-4">
+        <span class="status-pill mb-3">
+          <i class="bi bi-chat-heart text-success"></i> ¡Hagamos cosas bacanas juntos!
+        </span>
+        <h2 class="display-6 fw-bold mb-3 text-light">¿Charlamos o colaboramos?</h2>
+        <p class="text-secondary col-md-6 mx-auto mb-4 lead">
+          Estoy listo para nuevos retos, prácticas formativas y proyectos donde pueda seguir sumando valor y aprendiendo.
+        </p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="https://github.com/yea688513-blip" target="_blank" rel="noopener noreferrer" class="btn btn-vibrant-primary px-4 py-2">
+            <i class="bi bi-github me-2" aria-hidden="true"></i> Conectar en GitHub
+          </a>
+          <a href="#inicio" class="btn btn-vibrant-outline px-4 py-2">
+            <i class="bi bi-arrow-up-short me-1" aria-hidden="true"></i> Volver arriba
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página cálido y limpio -->
+  <footer class="border-top border-secondary-subtle py-4 mt-auto glass-nav">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center small text-secondary gap-2">
+      <p class="m-0 text-light-emphasis">© 2026 Juan David Quintero • Hecho con dedicación &amp; código limpio</p>
+      <p class="m-0">
+        <span class="text-success">&lt;3&gt;</span> Riwi Medellín
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

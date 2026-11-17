@@ -1,0 +1,265 @@
+/* ========================================================
+   PORTAFOLIO PERSONAL - JUAN DAVID QUINTERO
+   Personalizaciones sobre Bootstrap 5 Dark Theme
+   ======================================================== */
+
+:root {
+  scroll-behavior: smooth;
+  /* Paleta inspirada en verde Riwi con acentos eléctricos modernos */
+  --accent-green: #10b981;
+  --accent-glow: rgba(16, 185, 129, 0.22);
+  --accent-cyan: #06b6d4;
+  --accent-lime: #84cc16;
+}
+
+/* Tipografía y renderizado suave */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: -0.015em;
+  background-color: #0d1117 !important;
+  color: #e6edf3 !important;
+  overflow-x: hidden;
+}
+
+/* Fondo con efecto sutil de luz ambiental / gradiente */
+.hero-glow {
+  position: relative;
+}
+.hero-glow::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: 5%;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.16) 0%, rgba(6, 182, 212, 0.08) 50%, transparent 70%);
+  filter: blur(50px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Barra de navegación con blur tipo vidrio (glassmorphism sutil) */
+.glass-nav {
+  background-color: rgba(13, 17, 23, 0.82) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Marca / Logo */
+.brand-badge {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.5px;
+  transition: transform 0.2s ease;
+}
+.brand-badge:hover {
+  transform: scale(1.05);
+}
+
+/* Texto con degradado llamativo */
+.gradient-text {
+  background: linear-gradient(120deg, #34d399, #38bdf8, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Botones con estilo propio y vibrante */
+.btn-vibrant-primary {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+  transition: all 0.2s ease;
+}
+.btn-vibrant-primary:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.45);
+  color: #ffffff;
+}
+
+.btn-vibrant-outline {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e6edf3;
+  background: rgba(255, 255, 255, 0.03);
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+  transition: all 0.2s ease;
+}
+.btn-vibrant-outline:hover {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+  color: #34d399;
+  transform: translateY(-2px);
+}
+
+/* Indicador pulsante tipo "Disponible / Activo" */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.9rem;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  border-radius: 50rem;
+  font-size: 0.85rem;
+  color: #6ee7b7;
+  font-weight: 500;
+}
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: pulse-ring 2s infinite;
+}
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+/* Marcos para fotos con acento luminoso */
+.photo-frame {
+  position: relative;
+  display: inline-block;
+}
+.photo-frame::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.5), transparent, rgba(56, 189, 248, 0.4));
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.photo-frame:hover::after {
+  opacity: 1;
+}
+
+.hero-img {
+  max-height: 480px;
+  width: 100%;
+  max-width: 370px;
+  object-fit: cover;
+  object-position: top center;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+.about-img {
+  max-height: 440px;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Tarjetas interactivas con iluminación al hover */
+.custom-card {
+  background-color: #161b22 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 1rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+.custom-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(16, 185, 129, 0.45) !important;
+  box-shadow: 0 12px 30px -10px rgba(16, 185, 129, 0.2);
+}
+
+/* Tarjetas de habilidades / stack */
+.skill-card {
+  background: #161b22;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.9rem;
+  padding: 1.25rem;
+  transition: all 0.2s ease;
+  height: 100%;
+}
+.skill-card:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px -8px rgba(56, 189, 248, 0.25);
+}
+.skill-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  margin-bottom: 0.85rem;
+}
+
+/* Ficha en construcción */
+.border-dashed-card {
+  border: 2px dashed rgba(255, 255, 255, 0.2) !important;
+  background: rgba(22, 27, 34, 0.5) !important;
+}
+
+/* Galería con mini-cintas y efecto zoom */
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #161b22;
+}
+.gallery-thumb {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+  display: block;
+}
+.gallery-card:hover .gallery-thumb {
+  transform: scale(1.06);
+}
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(to top, rgba(13, 17, 23, 0.95), rgba(13, 17, 23, 0));
+  font-size: 0.82rem;
+  color: #e6edf3;
+  transform: translateY(100%);
+  transition: transform 0.25s ease;
+}
+.gallery-card:hover .gallery-overlay {
+  transform: translateY(0);
+}
+
+/* Datos destacados rápidos (stats o pill) */
+.stat-pill {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+
+/* Navegación activa */
+.nav-link {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #cbd5e1 !important;
+  transition: color 0.15s ease;
+}
+.nav-link:hover {
+  color: #34d399 !important;
+}
